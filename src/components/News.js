@@ -49,9 +49,6 @@ export class News extends Component {
 
 
 
-
-
-
     async updateNews() {
 
         this.props.setProgress(30);
@@ -94,10 +91,8 @@ export class News extends Component {
             articles: this.state.articles.concat(parsedData.articles),
         
             totalResults: parsedData.totalResults,
-            
 
         })
-
 
     }
 
