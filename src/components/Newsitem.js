@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import readm from './readm.png'
+
 
 export class Newsitem extends Component {
     render() {
@@ -15,7 +16,8 @@ export class Newsitem extends Component {
                         {source}
                     </span>
                 </div>
-                <img src={!imageUrl ? "https://www.truepush.com/blog/wp-content/uploads/2021/03/read-more-plugin-featured-image.jpg" : imageUrl} className="card-img-top" alt="..." />
+                {/* https://freesvg.org/img/Read-More-button.png  */}
+                <img src={!imageUrl ?  readm: imageUrl} className="card-img-top" alt="..." />
                 <div className="card-body" style={{ padding: '10px' }}>
                     <h5 className="card-title" style={{ fontSize: '22px', color: '#96ffef' }}>{title}</h5>
                     <p className="card-text" style={{ fontSize: '18px', color: '#ffffff' }}>{description}</p>
